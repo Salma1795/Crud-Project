@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    -->
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="from-group ">
+            <label>ProductName: </label>
+            <input class="form-control" type="text" id="productNameInput">
+        </div>
+
+
+        <div class="from-group py-2">
+            <label>ProductPrice: </label>
+            <input class="form-control" type="number" id="productPriceInput">
+        </div>
+
+        <div class="from-group py-2">
+            <label>ProductCategory: </label>
+            <input class="form-control" type="text" id="productCategoryInput">
+        </div>
+
+        <div class="from-group py-2">
+            <label>ProductDescription: </label>
+            <textarea class="form-control" type="text" id="productDescriptionInput"></textarea>
+        </div>
+
+        <button onclick="addProduct()" class="btn btn-info py-2">Add Product</button>
+    </div>
+
+
+    <div class="container w-75 m-auto">
+        <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search..." class="form-control mx-auto w-50 my-4">
+        
+        <table class="table text-center">
+            <thead>
+                <th>index</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+                <th>ProductCategory</th>
+                <th>ProductDesc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody id="table-body">
+
+            </tbody >
+
+        </table>
+    </div>
+
+
+    <script src="test.js"></script>
+    <!--
+    <h1 class="animate__animated animate__shakeY animate__1s "> Hello</h1>
+    <div class="animate__animated animate__bounce animate__delay-2s">Example</div>
+    -->
+</body>
+
+</html>
